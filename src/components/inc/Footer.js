@@ -25,26 +25,25 @@ function Footer() {
                             through innovative recruitment solutions.
                         </p>
 
-                        <div className="footer-socials">
+                       <div className="footer-social">
 
-                            <a href="#" aria-label="LinkedIn">
-                                <i className="bi bi-linkedin"></i>
-                            </a>
+    <button type="button" className="footer-social-link">
+        <i className="bi bi-linkedin"></i>
+    </button>
 
-                            <a href="#" aria-label="Facebook">
-                                <i className="bi bi-facebook"></i>
-                            </a>
+    <button type="button" className="footer-social-link">
+        <i className="bi bi-facebook"></i>
+    </button>
 
-                            <a href="#" aria-label="Twitter">
-                                <i className="bi bi-twitter"></i>
-                            </a>
+    <button type="button" className="footer-social-link">
+        <i className="bi bi-instagram"></i>
+    </button>
 
-                            <a href="#" aria-label="Instagram">
-                                <i className="bi bi-instagram"></i>
-                            </a>
+    <button type="button" className="footer-social-link">
+        <i className="bi bi-twitter-x"></i>
+    </button>
 
-                        </div>
-
+</div>
                     </div>
 
 
