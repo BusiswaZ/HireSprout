@@ -1,80 +1,125 @@
 import React from "react";
-import {Link} from 'react-router-dom'
+import { Link, NavLink } from "react-router-dom";
+import logo from "../images/hiresproutLogo.jpeg";
+import "../styles/Navbar.css";
 
-function Navbar()
-{
-    return(
-      <nav class="navbar navbar-expand-lg shadow-sm">
-  <div class="container">
-    
-    <Link to="/" className="navbar-brand">
-    <div className="logo-text">
-        <span className="logo-hire">Hire</span>
-        <span className="logo-sprout">Sprout</span>
-    </div>
+function Navbar() {
+    return (
+        <nav className="navbar navbar-expand-lg">
+            <div className="container">
 
-    <small className="logo-tagline">
-        Connecting Talent
-    </small>
-</Link>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-         
-          <Link to ="/" className="nav-link">Home</Link>
-        </li>
-        <li class="nav-item">
-           <Link to ="/about" className="nav-link">About</Link>
-        </li>
-        <li className="nav-item dropdown">
+                {/* HireSprout Logo */}
+                <Link className="navbar-brand" to="/">
+                    <img
+                        src={logo}
+                        alt="HireSprout Logo"
+                    />
+                </Link>
 
-    <a
-        className="nav-link dropdown-toggle"
-        href="/#"
-        id="pagesDropdown"
-        role="button"
-        data-bs-toggle="dropdown"
-        aria-expanded="false"
-    >
-        Explore
-    </a>
+                {/* Mobile Menu Button */}
+                <button
+                    className="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span className="navbar-toggler-icon"></span>
+                </button>
 
-    <ul className="dropdown-menu" aria-labelledby="pagesDropdown">
+                {/* Navigation */}
+                <div
+                    className="collapse navbar-collapse"
+                    id="navbarNav"
+                >
 
-        <li>
-            <Link className="dropdown-item" to="/how-it-works">
-                How It Works
-            </Link>
-        </li>
+                    <ul className="navbar-nav ms-auto">
 
-        <li>
-            <Link className="dropdown-item" to="/features">
-                Features
-            </Link>
-        </li>
+                        {/* Home */}
+                        <li className="nav-item">
+                            <NavLink
+                                className="nav-link"
+                                to="/"
+                            >
+                                Home
+                            </NavLink>
+                        </li>
 
-        <li>
-            <Link className="dropdown-item" to="/benefits">
-                Benefits
-            </Link>
-        </li>
+                        {/* About */}
+                        <li className="nav-item">
+                            <NavLink
+                                className="nav-link"
+                                to="/about"
+                            >
+                                About
+                            </NavLink>
+                        </li>
 
-    </ul>
+                        {/* Pages Dropdown */}
+                        <li className="nav-item dropdown">
 
-</li>
-        <li class="nav-item">
-           <Link to ="/contact" className="nav-link">Contact</Link>
-        </li>
-      </ul>
-      
-    </div>
-  </div>
-</nav>
-  
+                            <a
+                                className="nav-link dropdown-toggle"
+                                href="#pages"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Pages
+                            </a>
 
+                            <ul className="dropdown-menu">
+
+                                <li>
+                                    <Link
+                                        className="dropdown-item"
+                                        to="/features"
+                                    >
+                                        Features
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    <Link
+                                        className="dropdown-item"
+                                        to="/benefits"
+                                    >
+                                        Benefits
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    <Link
+                                        className="dropdown-item"
+                                        to="/how-it-works"
+                                    >
+                                        How It Works
+                                    </Link>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                        {/* Contact */}
+                        <li className="nav-item">
+                            <NavLink
+                                className="nav-link"
+                                to="/contact"
+                            >
+                                Contact
+                            </NavLink>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
     );
 }
+
 export default Navbar;

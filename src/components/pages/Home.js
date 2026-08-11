@@ -1,51 +1,60 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "../inc/Footer";
-
+import heroImage from "../images/contract.jpg";
+import "../styles/Home.css";
 
 function Home() {
-  return (
-    <>
-   {/* Hero Section */}
+    return (
+        <>
+            <main>
 
+               {/* Hero Section */}
 <section className="hero-section">
 
-    <div className="hero-overlay">
+    <div className="hero-background">
 
-        <div className="container">
+        <img
+            src={heroImage}
+            alt="Business professionals shaking hands"
+            className="hero-image"
+        />
 
-            <div className="row justify-content-center">
+        <div className="hero-overlay">
 
-                <div className="col-lg-8 text-center">
+            <div className="container">
+
+                <div className="hero-content">
+
+                    <p className="hero-label">
+                        WELCOME TO HIRESPROUT
+                    </p>
 
                     <h1 className="hero-title">
-                        Recruit Smarter.<br />
-                        Hire Faster.
+                        Grow Your Career.
+                        <br />
+                        Grow Your <span>Team.</span>
                     </h1>
 
-                    <p className="hero-text">
-                        Connecting talented professionals with leading companies
-                        through an innovative recruitment platform designed for
-                        speed, simplicity, and success.
+                    <div className="hero-line"></div>
+
+                    <p className="hero-description">
+                        HireSprout connects talented job seekers with
+                        employers through a simple and efficient
+                        recruitment platform.
                     </p>
 
                     <div className="hero-buttons">
 
-                        <Link
-                            to="/about"
-                            className="btn btn-light btn-lg me-3"
-                        >
+                     <Link to="/about" className="hero-btn">
                             Learn More
-                        </Link>
+                             </Link>
 
-                        <Link
-                            to="/contact"
-                            className="btn btn-outline-light btn-lg"
-                        >
-                            Contact Us
-                        </Link>
+                     <Link to="/contact" className="hero-btn">
+                                   Contact Us
+                              </Link>
 
-                    </div>
+                             </div>
 
                 </div>
 
@@ -56,154 +65,129 @@ function Home() {
     </div>
 
 </section>
+{/* Platform Overview */}
+<section className="overview-section">
 
-            <section className="services-section">
     <div className="container">
 
-        <div className="text-center mb-5">
-            <h2 className="section-title">Our Services</h2>
-            <p className="section-subtitle">
-                Everything you need to simplify recruitment and connect
-                employers with talented professionals.
+        <div className="overview-content">
+
+            <p className="overview-label">
+                ABOUT HIRESPROUT
             </p>
+
+            <h2>
+                Connecting Talent With
+                <span> Opportunity.</span>
+            </h2>
+
+            <div className="overview-line"></div>
+
+            <p className="overview-text">
+                HireSprout is a recruitment platform designed to connect
+                talented job seekers with employers. The platform makes it
+                easier for candidates to discover opportunities and for
+                employers to find suitable talent through a simple and
+                efficient recruitment process.
+            </p>
+
         </div>
+
+    </div>
+
+</section>
+{/* Statistics Section */}
+<section className="statistics-section">
+    <div className="container">
 
         <div className="row g-4">
 
-            <div className="col-md-4">
-                <div className="service-card">
-                    <h4>For Employers</h4>
-                    <p>
-                        Post job opportunities, manage applications,
-                        and find the right candidates quickly.
-                    </p>
+            {/* Statistic 1 */}
+            <div className="col">
+                <div className="stat-card stat-teal">
+                    
+
+                    <h3>500+</h3>
+
+                    <div className="stat-divider"></div>
+
+                    <p>Job Opportunities</p>
                 </div>
             </div>
 
-            <div className="col-md-4">
-                <div className="service-card featured-card">
-                    <h4>For Job Seekers</h4>
-                    <p>
-                        Search for opportunities, apply online,
-                        and build your career with confidence.
-                    </p>
+            {/* Statistic 2 */}
+            <div className="col">
+                <div className="stat-card stat-navy">
+                    
+
+                    <h3>1,000+</h3>
+
+                    <div className="stat-divider"></div>
+
+                    <p>Job Seekers</p>
                 </div>
             </div>
 
-            <div className="col-md-4">
-                <div className="service-card">
-                    <h4>Recruitment Made Easy</h4>
-                    <p>
-                        A secure platform designed to make hiring
-                        simple, efficient, and accessible.
-                    </p>
+            {/* Statistic 3 */}
+            <div className="col">
+                <div className="stat-card stat-teal">
+                    
+
+                    <h3>200+</h3>
+
+                    <div className="stat-divider"></div>
+
+                    <p>Registered Employers</p>
                 </div>
             </div>
+
+            {/* Statistic 4 */}
+            <div className="col">
+                <div className="stat-card stat-navy">
+                   
+
+                    <h3>850+</h3>
+
+                    <div className="stat-divider"></div>
+
+                    <p>Successful Placements</p>
+                </div>
+            </div>
+
+            {/* Statistic 5 */}
+            <div className="col">
+                <div className="stat-card stat-teal">
+                    
+
+                    <h3>95%</h3>
+
+                    <div className="stat-divider"></div>
+
+                    <p>Satisfaction Rate</p>
+                </div>
+            </div>
+              {/* Statistic 6 */}
+            <div className="col">
+                <div className="stat-card stat-navy">
+                    
+
+                    <h3>24/7</h3>
+
+                    <div className="stat-divider"></div>
+
+                    <p>Support Available</p>
+                </div>
+            </div>
+            
 
         </div>
 
     </div>
 </section>
-<section className="stats-section">
-    <div className="container">
 
-        <div className="text-center mb-5">
-            <h2 className="section-title-white">Our Impact</h2>
-            <p className="section-subtitle-white">
-               Trusted by employers and job seekers to create meaningful
-    connections and successful hiring experiences.
-            </p>
-        </div>
+            </main>
 
-        <div className="row text-center g-4">
-
-            <div className="col-6 col-md-3">
-                <div className="stat-card">
-                    <h2>1200+</h2>
-                    <p>Applicants</p>
-                </div>
-            </div>
-
-            <div className="col-6 col-md-3">
-                <div className="stat-card">
-                    <h2>500+</h2>
-                    <p>Vacancies</p>
-                </div>
-            </div>
-
-            <div className="col-6 col-md-3">
-                <div className="stat-card">
-                    <h2>150+</h2>
-                    <p>Companies</p>
-                </div>
-            </div>
-
-            <div className="col-6 col-md-3">
-                <div className="stat-card">
-                    <h2>95%</h2>
-                    <p>Hiring Success</p>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-    </section>
-    {/* ================= WHY CHOOSE HIRESPROUT ================= */}
-
-<section className="why-section">
-    <div className="container">
-
-        <div className="text-center mb-5">
-            <h2 className="section-title">Why Choose HireSprout?</h2>
-            <p className="section-subtitle">
-                We make recruitment simple, secure, and efficient for both employers and job seekers.
-            </p>
-        </div>
-
-        <div className="row g-4">
-
-            <div className="col-md-6 col-lg-3">
-                <div className="why-card">
-                    <h4>Easy Recruitment</h4>
-                    <p>
-                        Simplify the hiring process with an easy-to-use platform designed for efficiency.
-                    </p>
-                </div>
-            </div>
-
-            <div className="col-md-6 col-lg-3">
-                <div className="why-card">
-                    <h4>Secure Platform</h4>
-                    <p>
-                        Protect user information with a secure and reliable recruitment experience.
-                    </p>
-                </div>
-            </div>
-
-            <div className="col-md-6 col-lg-3">
-                <div className="why-card">
-                    <h4>Fast Hiring</h4>
-                    <p>
-                        Connect employers with qualified candidates quickly and effectively.
-                    </p>
-                </div>
-            </div>
-
-            <div className="col-md-6 col-lg-3">
-                <div className="why-card">
-                    <h4>User Friendly</h4>
-                    <p>
-                        A clean, responsive interface that is easy to navigate on any device.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-</section>
-<Footer />
+            <Footer />
         </>
     );
 }

@@ -1,0 +1,167 @@
+/* =========================
+   HireSprout Navbar
+========================= */
+
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--border);
+    padding: 16px 0;
+}
+
+/* Logo */
+
+.navbar-brand img {
+    height: 55px;
+    width: auto;
+    display: block;
+}
+
+/* Navigation */
+
+.navbar-nav {
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-link {
+    color: var(--primary) !important;
+    font-weight: 600;
+    font-size: 15px;
+
+    padding: 8px 14px !important;
+
+    position: relative;
+
+    transition: color 0.3s ease;
+}
+
+/* Hover */
+
+.nav-link:hover {
+    color: var(--secondary) !important;
+}
+
+/* Active Page */
+
+.nav-link.active {
+    color: var(--secondary) !important;
+}
+
+/* Small line under active page */
+
+.nav-link.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: -4px;
+
+    transform: translateX(-50%);
+
+    width: 30px;
+    height: 3px;
+
+    background-color: var(--secondary);
+
+    border-radius: 10px;
+}
+
+/* =========================
+   Pages Dropdown
+========================= */
+
+.dropdown-menu {
+    background-color: #ffffff;
+
+    border: 1px solid #cfe8d5;
+
+    border-radius: 10px;
+
+    padding: 8px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.dropdown-item {
+    color: var(--secondary);
+
+    font-weight: 500;
+
+    padding: 9px 14px;
+
+    border-radius: 6px;
+
+    transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #e8f5ea;
+
+    color: var(--primary);
+}
+
+/* Dropdown arrow */
+
+.dropdown-toggle::after {
+    margin-left: 6px;
+}
+/* =================================
+   DROPDOWN - HIRESPROUT STYLING
+================================= */
+
+/* Dropdown container */
+.navbar .dropdown-menu {
+    background-color: #ffffff;
+    border: 1px solid #d9e4e8;
+    border-radius: 8px;
+    padding: 8px 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Dropdown links */
+.navbar .dropdown-item {
+    color: var(--primary) !important;
+    background-color: transparent !important;
+
+    padding: 10px 20px;
+
+    transition: all 0.2s ease;
+}
+
+
+/* Hover */
+.navbar .dropdown-item:hover {
+    color: var(--secondary) !important;
+    background-color: rgba(24, 174, 186, 0.08) !important;
+}
+
+
+/* IMPORTANT:
+   Remove Bootstrap's default blue
+   when the dropdown item is clicked
+*/
+.navbar .dropdown-item:active,
+.navbar .dropdown-item:focus,
+.navbar .dropdown-item.active {
+    color: var(--secondary) !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+
+/* Remove the blue focus from "Pages" */
+.navbar .dropdown-toggle:focus,
+.navbar .dropdown-toggle:active,
+.navbar .dropdown-toggle.show {
+    color: var(--secondary) !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+
+/* Keep dropdown arrow teal when open */
+.navbar .dropdown-toggle.show {
+    color: var(--secondary) !important;
+}

@@ -1,0 +1,528 @@
+/* =========================
+   ABOUT HEADER
+========================= */
+
+.about-header {
+    background-color: var(--secondary);
+
+    color: #ffffff;
+
+    padding: 75px 0 85px;
+
+    text-align: center;
+}
+
+.about-header-content {
+    max-width: 850px;
+
+    margin: 0 auto;
+}
+
+.about-label {
+    color: #ffffff;
+
+    font-size: 0.85rem;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.about-header h1 {
+    color: #ffffff;
+
+    font-size: 3.2rem;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+.about-intro {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    color: rgba(255, 255, 255, 0.92);
+
+    font-size: 1.05rem;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   ABOUT CARDS
+========================= */
+
+.about-cards-section {
+    background-color: var(--page-background);
+
+    padding: 65px 0;
+}
+
+.about-card {
+    height: 100%;
+
+    background-color: #ffffff;
+
+    border: 1px solid var(--border);
+
+    border-radius: 12px;
+
+    padding: 35px 30px;
+
+    transition: all 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+
+    border-color: var(--secondary);
+
+    box-shadow: 0 10px 25px rgba(10, 61, 122, 0.08);
+}
+
+
+/* Who We Are */
+
+.who-we-are {
+    border-top: 4px solid var(--secondary);
+
+    padding: 40px 35px;
+}
+
+
+/* Icons */
+
+.card-accent {
+    width: 55px;
+
+    height: 3px;
+
+    background-color: var(--primary);
+
+    border-radius: 5px;
+
+    margin-bottom: 18px;
+}
+
+
+/* Headings */
+
+.about-card h2,
+.about-card h3 {
+    color: var(--primary);
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+.about-card h2 {
+    font-size: 1.6rem;
+}
+
+.about-card h3 {
+    font-size: 1.35rem;
+}
+
+
+/* Text */
+
+.about-card p {
+    color: var(--text);
+
+    font-size: 0.95rem;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .about-header {
+        padding: 60px 20px 65px;
+    }
+
+    .about-header h1 {
+        font-size: 2.4rem;
+    }
+
+    .about-intro {
+        font-size: 1rem;
+    }
+
+    .about-cards-section {
+        padding: 50px 20px;
+    }
+
+    .who-we-are {
+        padding: 35px 30px;
+    }
+}
+/* =========================
+   PROBLEM SECTION
+========================= */
+
+.problem-section {
+    background-color: #ffffff;
+
+    padding: 70px 0;
+}
+
+.problem-heading {
+    max-width: 750px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+.problem-heading .about-label {
+    color: var(--secondary);
+
+    margin-bottom: 10px;
+}
+
+.problem-heading h2 {
+    color: var(--secondary);
+
+    font-size: 2.4rem;
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+.problem-line {
+    width: 55px;
+
+    height: 3px;
+
+    background-color: var(--secondary);
+
+    border-radius: 5px;
+
+    margin: 0 auto 20px;
+}
+
+.problem-heading > p:last-child {
+    color: var(--text);
+
+    font-size: 1rem;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* Problem Cards */
+
+.problem-card {
+    height: 100%;
+
+    background-color: var(--page-background);
+
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+    padding: 30px 25px;
+
+    transition: all 0.3s ease;
+}
+
+.problem-card:hover {
+    transform: translateY(-5px);
+
+    border-color: var(--secondary);
+
+    box-shadow: 0 8px 20px rgba(10, 61, 122, 0.08);
+}
+
+
+/* Number */
+
+.problem-number {
+    color: var(--secondary);
+
+    font-size: 0.9rem;
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+
+/* Heading */
+
+.problem-card h3 {
+    color: var(--primary);
+
+    font-size: 1.15rem;
+
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    margin-bottom: 12px;
+}
+
+
+/* Text */
+
+.problem-card p {
+    color: var(--text);
+
+    font-size: 0.9rem;
+
+    line-height: 1.6;
+
+    margin: 0;
+}
+/* =========================
+   WHY CHOOSE HIRESPROUT
+========================= */
+
+.why-choose-section {
+    padding: 70px 0;
+
+    background-color: #ffffff;
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.why-image {
+    position: relative;
+
+    height: 100%;
+
+    min-height: 600px;
+
+    overflow: hidden;
+
+    border-radius: 12px 0 0 12px;
+}
+
+.why-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* Teal overlay */
+
+.why-image-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background-color: rgba(22, 182, 200, 0.68);
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.why-content {
+    height: 100%;
+
+    padding: 45px 45px;
+
+    background-color: var(--page-background);
+
+    border-radius: 0 12px 12px 0;
+}
+
+
+/* Accent */
+
+.why-accent {
+    width: 55px;
+
+    height: 3px;
+
+    background-color: var(--secondary);
+
+    border-radius: 5px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Heading */
+
+.why-content h2 {
+    color: var(--primary);
+
+    font-size: 2.3rem;
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+
+/* Introduction */
+
+.why-intro {
+    color: var(--text);
+
+    font-size: 0.95rem;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   REASONS
+========================= */
+
+.why-reason {
+    display: flex;
+
+    gap: 15px;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.why-reason:last-child {
+    border-bottom: none;
+}
+
+
+/* Check */
+
+.why-check {
+    flex-shrink: 0;
+
+    width: 32px;
+
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: var(--primary);
+
+    color: #ffffff;
+
+    font-size: 0.9rem;
+}
+
+
+/* Reason heading */
+
+.why-reason h3 {
+    color: var(--primary);
+
+    font-size: 1rem;
+
+    font-weight: 700;
+
+    margin: 0 0 4px;
+}
+
+
+/* Reason text */
+
+.why-reason p {
+    color: var(--text);
+
+    font-size: 0.85rem;
+
+    line-height: 1.5;
+
+    margin: 0;
+}
+
+
+/* =========================
+   HOVER
+========================= */
+
+.why-reason {
+    transition: all 0.3s ease;
+}
+
+.why-reason:hover {
+    padding-left: 5px;
+}
+
+.why-reason:hover .why-check {
+    background-color: var(--secondary);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 991px) {
+
+    .why-image {
+        min-height: 400px;
+
+        border-radius: 12px 12px 0 0;
+    }
+
+    .why-content {
+        border-radius: 0 0 12px 12px;
+
+        padding: 40px 30px;
+    }
+
+    .why-content h2 {
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .why-choose-section {
+        padding: 50px 15px;
+    }
+
+    .why-image {
+        min-height: 300px;
+    }
+
+    .why-content {
+        padding: 30px 20px;
+    }
+
+    .why-content h2 {
+        font-size: 1.8rem;
+    }
+}

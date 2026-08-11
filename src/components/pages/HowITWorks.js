@@ -1,5 +1,5 @@
 import React, { useState }from "react";
-import { Link } from "react-router-dom";
+import "../styles/HowITWorks.css";
 import Footer from "../inc/Footer";
 
 
@@ -164,65 +164,7 @@ const [activeStep, setActiveStep] = useState(null);
 
             </section>
 
-         <section className="cta-section">
-
-    <div className="container">
-
-        <div className="text-center mb-5">
-
-            <h2 className="cta-title">
-                Ready to Join HireSprout?
-            </h2>
-
-            <p className="cta-subtitle">
-                Whether you're hiring exceptional talent or searching for your next opportunity,
-                choose how you'd like to get started.
-            </p>
-
-        </div>
-
-        <div className="cta-options">
-<Link
-    to="/features?role=employer"
-    className="cta-card employer-card"
->
-
-    <div className="cta-left">
-
-        <i className="bi bi-briefcase-fill"></i>
-
-        <span>I'm an Employer</span>
-
-    </div>
-
-    <i className="bi bi-arrow-right"></i>
-
-</Link>
-
-        <Link
-    to="/features?role=jobseeker"
-    className="cta-card seeker-card"
->
-
-    <div className="cta-left">
-
-        <i className="bi bi-person-workspace"></i>
-
-        <span>I'm a Job Seeker</span>
-
-    </div>
-
-    <i className="bi bi-arrow-right"></i>
-
-</Link>
-
-        </div>
-
-    </div>
-
-</section>
-
-
+        
 
 
        <Footer />

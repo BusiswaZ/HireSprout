@@ -1,0 +1,298 @@
+/* =========================
+   HOW IT WORKS HEADER
+========================= */
+
+.how-header {
+    background-color: var(--page-background);
+
+    padding: 75px 0 65px;
+}
+
+.how-header .about-title {
+    color: var(--secondary);
+
+    font-size: 3rem;
+
+    font-weight: 700;
+
+    margin-bottom: 18px;
+}
+
+.how-header .about-subtitle {
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    color: var(--secondary);
+
+    font-size: 1rem;
+
+    line-height: 1.7;
+}
+/* =========================
+   TIMELINE SECTION
+========================= */
+
+.timeline-section {
+    background-color: #ffffff;
+
+    padding: 80px 0;
+}
+.timeline {
+    position: relative;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+}
+
+
+/* Vertical line */
+
+.timeline::before {
+    content: "";
+
+    position: absolute;
+
+    left: 35px;
+
+    top: 35px;
+
+    bottom: 35px;
+
+    width: 3px;
+
+    background-color: var(--border);
+
+    z-index: 0;
+}
+
+
+/* Timeline item */
+
+.timeline-item {
+    position: relative;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 25px;
+
+    margin-bottom: 30px;
+
+    cursor: pointer;
+
+    z-index: 1;
+}
+
+
+/* Timeline number */
+
+.timeline-circle {
+    width: 70px;
+
+    height: 70px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: #ffffff;
+
+    font-size: 1.1rem;
+
+    font-weight: 700;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Employer = Navy */
+
+.timeline-circle.employer {
+    background-color: var(--primary);
+}
+
+
+/* Job seeker = Teal */
+
+.timeline-circle.seeker {
+    background-color: var(--secondary);
+}
+
+
+/* Timeline card */
+
+.timeline-content {
+    flex: 1;
+
+    background-color: var(--card-background);
+
+    border: 1px solid var(--border);
+
+    border-radius: 12px;
+
+    padding: 22px 28px;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Title */
+
+.timeline-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.timeline-title i {
+    font-size: 1.35rem;
+}
+
+
+/* Employer icon */
+
+.timeline-title i.employer {
+    color: var(--primary);
+}
+
+
+/* Job seeker icon */
+
+.timeline-title i.seeker {
+    color: var(--secondary);
+}
+
+
+.timeline-title h5 {
+    margin: 0;
+
+    color: var(--primary);
+
+    font-size: 1.15rem;
+
+    font-weight: 600;
+}
+
+
+/* Description */
+
+.timeline-description {
+    margin-top: 18px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid var(--border);
+
+    animation: timelineReveal 0.25s ease;
+}
+
+.timeline-description p {
+    margin: 0;
+
+    color: var(--text);
+
+    font-size: 0.95rem;
+
+    line-height: 1.7;
+}
+
+
+@keyframes timelineReveal {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+
+/* Hover */
+
+.timeline-item:hover .timeline-content {
+    transform: translateX(5px);
+
+    box-shadow: 0 8px 20px rgba(2, 27, 58, 0.06);
+}
+.timeline::before {
+    content: "";
+
+    position: absolute;
+
+    left: 35px;
+
+    top: 35px;
+
+    bottom: 35px;
+
+    width: 3px;
+
+    background-color: rgba(24, 174, 186, 0.35);
+
+    z-index: 0;
+}
+@media (max-width: 768px) {
+
+    .how-header {
+        padding: 55px 20px;
+    }
+
+    .how-header .about-title {
+        font-size: 2.3rem;
+    }
+
+    .timeline-section {
+        padding: 55px 20px;
+    }
+
+    .timeline::before {
+        left: 25px;
+    }
+
+    .timeline-item {
+        gap: 15px;
+
+        margin-bottom: 22px;
+    }
+
+    .timeline-circle {
+        width: 50px;
+
+        height: 50px;
+
+        font-size: 0.85rem;
+    }
+
+    .timeline-content {
+        padding: 18px;
+    }
+
+    .timeline-title {
+        gap: 10px;
+    }
+
+    .timeline-title h5 {
+        font-size: 1rem;
+    }
+
+    .timeline-description p {
+        font-size: 0.9rem;
+    }
+}

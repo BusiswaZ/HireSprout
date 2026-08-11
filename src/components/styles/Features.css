@@ -1,0 +1,564 @@
+/* =========================
+   FEATURES HEADER
+========================= */
+
+.features-header {
+    background-color: var(--page-background);
+
+    padding: 80px 0;
+
+    text-align: center;
+}
+
+.features-header-content {
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+.features-header h1 {
+    color: var(--secondary);
+
+    font-size: 3.2rem;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+.features-header p {
+    color: var(--secondary);
+
+    font-size: 1.05rem;
+
+    line-height: 1.7;
+
+    max-width: 800px;
+
+    margin: 0 auto;
+}
+@media (max-width: 768px) {
+
+    .features-header {
+        padding: 60px 20px;
+    }
+
+    .features-header h1 {
+        font-size: 2.4rem;
+    }
+
+    .features-header p {
+        font-size: 1rem;
+    }
+}
+/* =========================
+   FEATURES PAGE
+========================= */
+
+.features-page {
+    background-color: #ffffff;
+
+    min-height: 100vh;
+}
+
+
+/* =========================
+   ROLE SWITCH
+========================= */
+
+.role-switch {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    padding: 45px 0;
+}
+
+.role-switch button {
+    min-width: 200px;
+
+    padding: 15px 30px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 30px;
+
+    background-color: #ffffff;
+
+    color: var(--primary);
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.role-switch button i {
+    margin-right: 10px;
+}
+
+
+/* Active role */
+
+.role-switch button.active-role {
+    background-color: var(--secondary);
+
+    border-color: var(--secondary);
+
+    color: #ffffff;
+
+    box-shadow: 0 6px 15px rgba(22, 182, 200, 0.2);
+}
+
+
+/* Hover */
+
+.role-switch button:hover {
+    border-color: var(--secondary);
+
+    color: var(--secondary);
+}
+
+.role-switch button.active-role:hover {
+    background-color: var(--secondary);
+
+    color: #ffffff;
+}
+
+
+/* =========================
+   FEATURES LAYOUT
+========================= */
+
+.features-layout {
+    display: grid;
+
+    grid-template-columns: 390px 1fr;
+
+    gap: 40px;
+
+    padding-bottom: 80px;
+}
+
+
+/* =========================
+   LEFT FEATURE MENU
+========================= */
+
+.features-menu {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.feature-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    min-height: 90px;
+
+    padding: 18px 22px;
+
+    background-color: #ffffff;
+
+    border: 1px solid var(--border);
+
+    border-radius: 12px;
+
+    color: var(--primary);
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Feature icon */
+
+.feature-icon {
+    width: 50px;
+
+    height: 50px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: rgba(22, 182, 200, 0.12);
+
+    color: var(--secondary);
+
+    font-size: 1.2rem;
+}
+
+
+/* Feature title */
+
+.feature-item span {
+    font-size: 0.95rem;
+
+    font-weight: 600;
+}
+
+
+/* Active feature */
+
+.feature-item.active-feature {
+    background-color: var(--secondary);
+
+    border-color: var(--secondary);
+
+    color: #ffffff;
+
+    box-shadow: 0 8px 20px rgba(22, 182, 200, 0.2);
+}
+
+
+/* Active icon */
+
+.feature-item.active-feature .feature-icon {
+    background-color: #ffffff;
+
+    color: var(--secondary);
+}
+
+
+/* Hover */
+
+.feature-item:hover {
+    border-color: var(--secondary);
+
+    transform: translateX(4px);
+}
+
+.feature-item.active-feature:hover {
+    background-color: var(--secondary);
+
+    color: #ffffff;
+}
+
+
+/* =========================
+   FEATURE DETAILS
+========================= */
+
+.feature-details {
+    background-color: #ffffff;
+
+    border: 1px solid var(--border);
+
+    border-radius: 15px;
+
+    padding: 55px;
+
+    min-height: 500px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    box-shadow: 0 8px 25px rgba(10, 61, 122, 0.05);
+}
+
+
+/* Large icon */
+
+.details-icon {
+    width: 90px;
+
+    height: 90px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: rgba(22, 182, 200, 0.12);
+
+    color: var(--secondary);
+
+    font-size: 2.3rem;
+
+    margin-bottom: 30px;
+}
+
+
+/* Feature title */
+
+.feature-details h2 {
+    color: var(--primary);
+
+    font-size: 2.3rem;
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+
+/* Feature description */
+
+.feature-details > p {
+    max-width: 850px;
+
+    color: var(--text);
+
+    font-size: 1.05rem;
+
+    line-height: 1.8;
+
+    margin: 0;
+}
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+
+    .features-layout {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 30px;
+    }
+
+    /* Description comes first */
+    .feature-details {
+        order: 1;
+
+        min-height: auto;
+
+        padding: 35px 25px;
+    }
+
+    /* Feature buttons come underneath */
+    .features-menu {
+        order: 2;
+
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 15px;
+    }
+
+    .feature-item {
+        min-height: 110px;
+    }
+}
+@media (max-width: 576px) {
+
+    .role-switch {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 10px;
+    }
+
+    .role-switch button {
+        width: 100%;
+
+        max-width: 300px;
+    }
+
+    .features-menu {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-details {
+        padding: 35px 25px;
+    }
+
+    .feature-details h2 {
+        font-size: 1.8rem;
+    }
+
+    .feature-details > p {
+        font-size: 0.95rem;
+    }
+}
+/* =========================
+   READY TO GET STARTED
+========================= */
+
+.ready-section {
+    background-color: var(--page-background);
+
+    padding: 45px 0;
+
+    border-top: 1px solid var(--border);
+
+    border-bottom: 1px solid var(--border);
+}
+
+.ready-content {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 40px;
+}
+
+.ready-text {
+    max-width: 650px;
+}
+
+.ready-accent {
+    width: 45px;
+
+    height: 3px;
+
+    background-color: var(--secondary);
+
+    border-radius: 5px;
+
+    margin-bottom: 12px;
+}
+
+.ready-text h2 {
+    color: var(--primary);
+
+    font-size: 1.7rem;
+
+    font-weight: 700;
+
+    margin-bottom: 8px;
+}
+
+.ready-text p {
+    color: var(--text);
+
+    font-size: 0.9rem;
+
+    line-height: 1.6;
+
+    margin: 0;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.ready-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    flex-shrink: 0;
+}
+
+.ready-btn {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 12px 20px;
+
+    border-radius: 6px;
+
+    font-size: 0.9rem;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Employer */
+
+.employer-btn {
+    background-color: var(--secondary);
+
+    color: #ffffff;
+
+    border: 2px solid var(--secondary);
+}
+
+.employer-btn:hover {
+    background-color: var(--primary);
+
+    border-color: var(--primary);
+
+    color: #ffffff;
+}
+
+
+/* Job Seeker */
+
+.seeker-btn {
+    background-color: var(--primary);
+
+    color: #ffffff;
+
+    border: 2px solid var(--primary);
+}
+
+.seeker-btn:hover {
+    background-color: var(--secondary);
+
+    border-color: var(--secondary);
+
+    color: #ffffff;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .ready-content {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .ready-buttons {
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .ready-btn {
+        width: 100%;
+    }
+}

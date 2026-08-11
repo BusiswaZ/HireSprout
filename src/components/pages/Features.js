@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import Footer from "../inc/Footer";
+import "../styles/Features.css";
 
 
 const employerFeatures = [
@@ -168,30 +168,23 @@ function Features() {
 =========================== */}
 
 <section className="features-header">
-
     <div className="container">
 
-        <div className="text-center">
+        <div className="features-header-content">
 
-
-            <h1 className="features-title">
-
+            <h1>
                 Explore HireSprout Features
-
             </h1>
 
-            <p className="features-subtitle">
-
-                Discover the tools and features that simplify recruitment for
-                employers while making job searching and applications easier
-                for job seekers.
-
+            <p>
+                Discover the tools and features that simplify recruitment
+                for employers while making job searching and applications
+                easier for job seekers.
             </p>
 
         </div>
 
     </div>
-
 </section>
 
             {/* ===========================
@@ -276,49 +269,23 @@ function Features() {
 
             {/* Right Details */}
 
-            <div className="feature-details">
+          <div className="feature-details">
 
-                <div className="details-icon">
+             <div className="details-icon">
 
-                    <i className={`bi ${features[selectedFeature].icon}`}></i>
+             <i className={`bi ${features[selectedFeature].icon}`}></i>
 
-                </div>
+              </div>
 
-                <h2>
+                 <h2>
+                  {features[selectedFeature].title}
+                   </h2>
 
-                    {features[selectedFeature].title}
+                  <p>
+              {features[selectedFeature].description}
+               </p>
 
-                </h2>
-
-                <p>
-
-                    {features[selectedFeature].description}
-
-                </p>
-
-                <div className="feature-benefits">
-
-                    <h4>Key Benefits</h4>
-
-                    <ul>
-
-                        {features[selectedFeature].benefits.map((benefit, index) => (
-
-                            <li key={index}>
-
-                                <i className="bi bi-check-circle-fill"></i>
-
-                                {benefit}
-
-                            </li>
-
-                        ))}
-
-                    </ul>
-
-                </div>
-
-            </div>
+              </div>
 
         </div>
 
@@ -326,61 +293,49 @@ function Features() {
 
 </section>
 
-            <section className="cta-section">
+     
+{/* =========================
+    READY TO JOIN
+========================= */}
+
+<section className="ready-section">
 
     <div className="container">
 
-        <div className="cta-card">
+        <div className="ready-content">
 
-            <h2>Ready to Join HireSprout?</h2>
+            <div className="ready-text">
 
-            <p>
-        
-            </p>
+                <div className="ready-accent"></div>
 
-            <div className="cta-buttons">
+                <h2>
+                    Ready to Get Started?
+                </h2>
 
-               <div className="cta-options">
-<Link
-    to="/features?role=employer"
-    className="cta-card employer-card"
->
+                <p>
+                    Whether you're looking for your next opportunity
+                    or searching for the right talent, HireSprout
+                    makes recruitment simple and accessible.
+                </p>
 
-    <div className="cta-left">
-
-        <i className="bi bi-briefcase-fill"></i>
-
-        <span>I'm an Employer</span>
-
-    </div>
-
-    <i className="bi bi-arrow-right"></i>
-
-</Link>
-
-        <Link
-    to="/features?role=jobseeker"
-    className="cta-card seeker-card"
->
-
-    <div className="cta-left">
-
-        <i className="bi bi-person-workspace"></i>
-
-        <span>I'm a Job Seeker</span>
-
-    </div>
-
-    <i className="bi bi-arrow-right"></i>
-
-</Link>
+            </div>
 
 
-            
+            <div className="ready-buttons">
+
+                <button className="ready-btn employer-btn">
+                    <i className="bi bi-briefcase-fill"></i>
+                    I'm an Employer
+                </button>
+
+                <button className="ready-btn seeker-btn">
+                    <i className="bi bi-person-fill"></i>
+                    I'm a Job Seeker
+                </button>
+
+            </div>
 
         </div>
-         </div>
-          </div>
 
     </div>
 

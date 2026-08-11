@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../styles/Contact.css";
 function Contact(){
 
     return(
@@ -99,7 +99,7 @@ function Contact(){
 
     <div>
         <h5>Phone</h5>
-        <p>+27 12 345 6789</p>
+        <p>083 474 9155</p>
     </div>
 
 </div>
@@ -112,7 +112,7 @@ function Contact(){
 
     <div>
         <h5>Email</h5>
-        <p>info@hiresprout.co.za</p>
+        <p>vhutheluresources@gmail.com</p>
     </div>
 
 </div>
@@ -125,7 +125,7 @@ function Contact(){
 
     <div>
         <h5>Office</h5>
-        <p>Pretoria, Gauteng, South Africa</p>
+        <p>111 Outeniqua Flats, 721 Church St, Arcadia, Gauteng</p>
     </div>
 
 </div>
@@ -134,39 +134,43 @@ function Contact(){
     Follow Us
 </h4>
 
-<div className="social-links">
+<div className="contact-social">
 
     <a
-    href="https://www.linkedin.com"
-    target="_blank"
-    rel="noopener noreferrer"
->
-    <i className="bi bi-linkedin"></i>
-</a>
+        href="https://www.linkedin.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn"
+    >
+        <i className="bi bi-linkedin"></i>
+    </a>
 
-<a
-    href="https://www.facebook.com"
-    target="_blank"
-    rel="noopener noreferrer"
->
-    <i className="bi bi-facebook"></i>
-</a>
+    <a
+        href="https://www.facebook.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Facebook"
+    >
+        <i className="bi bi-facebook"></i>
+    </a>
 
-<a
-    href="https://www.instagram.com"
-    target="_blank"
-    rel="noopener noreferrer"
->
-    <i className="bi bi-instagram"></i>
-</a>
+    <a
+        href="https://www.instagram.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Instagram"
+    >
+        <i className="bi bi-instagram"></i>
+    </a>
 
-<a
-    href="https://twitter.com"
-    target="_blank"
-    rel="noopener noreferrer"
->
-    <i className="bi bi-twitter-x"></i>
-</a>
+    <a
+        href="https://twitter.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Twitter"
+    >
+        <i className="bi bi-twitter-x"></i>
+    </a>
 
 </div>
 

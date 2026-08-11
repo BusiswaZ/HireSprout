@@ -1,0 +1,163 @@
+/* =========================
+   BENEFITS HEADER
+========================= */
+
+.benefits-header {
+    background-color: var(--page-background);
+
+    padding: 80px 0;
+
+    text-align: center;
+}
+
+.benefits-header-content {
+    max-width: 850px;
+
+    margin: 0 auto;
+}
+
+.benefits-header h1 {
+    color: var(--secondary);
+
+    font-size: 3.2rem;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+.benefits-header p {
+    color: var(--secondary);
+
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    font-size: 1.05rem;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   BENEFITS SECTION
+========================= */
+
+.benefits-section {
+    background-color: #ffffff;
+
+    padding: 20px 0 80px;
+}
+
+.benefits-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 50px 45px;
+}
+
+.benefit-item {
+    padding: 10px 5px;
+
+    transition: transform 0.3s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Icon */
+
+.benefit-icon {
+    width: 45px;
+
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 15px;
+
+    color: var(--secondary);
+
+    font-size: 1.5rem;
+}
+
+
+/* Small accent */
+
+.benefit-accent {
+    width: 35px;
+
+    height: 3px;
+
+    background-color: var(--secondary);
+
+    border-radius: 5px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Title */
+
+.benefit-item h2 {
+    color: var(--primary);
+
+    font-size: 1.15rem;
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+
+/* Description */
+
+.benefit-item p {
+    color: var(--text);
+
+    font-size: 0.9rem;
+
+    line-height: 1.6;
+
+    margin: 0;
+}
+@media (max-width: 991px) {
+
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 40px 30px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .benefits-header {
+        padding: 60px 20px;
+    }
+
+    .benefits-header h1 {
+        font-size: 2.4rem;
+    }
+
+    .benefits-section {
+        padding: 10px 25px 60px;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+}
