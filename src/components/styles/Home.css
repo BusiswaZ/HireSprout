@@ -129,6 +129,13 @@
 
     gap: 15px;
 }
+.hero-buttons a,
+.hero-buttons a,
+.hero-buttons a:hover,
+.hero-buttons a:focus,
+.hero-buttons a:active {
+    text-decoration: none;
+}
 
 .hero-btn {
     padding: 12px 28px;
